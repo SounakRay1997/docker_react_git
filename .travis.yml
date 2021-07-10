@@ -1,0 +1,10 @@
+sudo : required
+
+services :
+  - docker
+
+before_install :
+  - docker build -t sounakraycolumbia/docker_react_git -f Dockerfile.dev .
+
+script :
+  - docker run -e CI=true sounakraycolumbia/docker_react_git npm run test -- --coverage
