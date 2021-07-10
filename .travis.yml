@@ -13,7 +13,7 @@ deploy :
   provider : elasticbeanstalk
   region : "us-east-2"
   app : "docker-react-git"
-  env :  "Dockerreactgit-env"
+  env :  "Dockerreactgit-env-1"
   bucket_name : "elasticbeanstalk-us-east-2-281307845866"
   bucket_path: "docker-react-git"
   access_key_id: $AWS_ACCESS_KEY
